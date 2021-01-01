@@ -6,17 +6,22 @@
     "permissions" : [
         "http://*/*",
         "https://*/*",
-        "notifications"
-    ],
-    "browser_action" : {
-        "default_icon" : "img/number_1.png",
-        "default_popup" : "popup.html"
-    },
+        "notifications",
+        "tabs",
+        "webNavigation"
+    ]
+    // ,
+    // "browser_action" : {
+    //     "default_icon" : "img/number_1.png",
+    //     "default_popup" : "popup.html"
+    // }
+    ,
     "icons" : {
         "128" : "img/number_1.png"
     }
-    // ,
-    // "background" : {
-    //     "scripts" : ["js/app.js"]
-    // }
+    ,
+    "background" : {
+        "scripts" : ["js/background.js"],
+        "persistent" : true
+    }
 }
